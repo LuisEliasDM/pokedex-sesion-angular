@@ -1,0 +1,9 @@
+<a [routerLink]="['/pokedex/pokemon/' + getPreviusId()]" routerLinkActive="active" >
+    <
+</a>
+<h2>{{id}}: {{pokemon.name | uppercase}}</h2>
+<a [routerLink]="['/pokedex/pokemon/' + getNextId()]" routerLinkActive="active" >
+    >
+</a>
+
+<img src="{{pokemon.sprites.other['official-artwork'].front_default}}" alt="">
